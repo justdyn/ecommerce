@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+.block-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    pointer-events: none;
+    z-index: 100;
+}
+
+.row {
+    flex: 1;
+    width: 100%;
+    display: flex;
+}
+
+.block {
+    position: relative;
+    flex: 1;
+    background: #667067;
+    margin: -0.25px;
+    transform-origin: top;
+}
+
+.exit-block {
+    transform-origin: bottom;
+}
+
+.enter-block {
+    transform-origin: top;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+.hero-image {
+    transform-origin: center;
+    will-change: transform, opacity;
+  }
+  
+  /* Optional: Add hover effect */
+  .hero-image:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease-out;
+  }
+  
+  /* Smooth transitions */
+  .page-transition {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .page-transition-enter {
+    opacity: 0;
+  }
+  
+  .page-transition-enter-active {
+    opacity: 1;
+  }
+  
+  .page-transition-exit {
+    opacity: 1;
+  }
+  
+  .page-transition-exit-active {
+    opacity: 0;
+  }
+
+  /* Add to your index.css */
+@font-face {
+    font-family: 'Mono';
+    src: url('path-to-your-monospace-font.woff2') format('woff2');
+  }
+  
+  .font-mono {
+    font-family: 'Mono', monospace;
+    letter-spacing: 0.05em;
+  }
+  
+  /* Navbar transition */
+  .navbar-transition {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
