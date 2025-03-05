@@ -118,9 +118,6 @@ app.delete('/produk/:id', async (req, res) => {
     res.status(500).json({ error: 'Server error' });
     }
     });
-    
-    
-    
 
 app.listen(port, () => {
     console.log(`Server berjalan di http://localhost:${port}`);

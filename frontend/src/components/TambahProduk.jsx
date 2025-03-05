@@ -19,6 +19,7 @@ function TambahProduk() {
             console.log('Produk berhasil ditambah : ', res.data);
             setNama('');
             setHarga('');
+            window.location.reload();
         }).catch((err) =>{
             console.log('Error menambah produk : ', err);
         });
