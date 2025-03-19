@@ -26,22 +26,43 @@ function TambahProduk() {
     };
 
     return (
-        <div>
-            <h2>Tambah Produk</h2>
-            {error && <p style={{color: 'red'}}>{error}</p>}
-            <form onSubmit={handleSubmit}>
-                <div>
-                    <label>Nama Produk</label>
-                    <input type="text" value={nama} onChange={(e) => setNama(e.target.value)} />
-                </div>
-                <div>
-                    <label>Harga:</label>
-                    <input type="number" value={harga} onChange={(e) => setHarga(e.target.value)} />
-                </div>
-                <button type="Submit">Simpan</button>
-            </form>
+        <div className="max-w-md mx-auto p-6">
+            <div className="bg-white rounded-lg border border-gray-200 shadow-sm p-6">
+                <h2 className="text-2xl font-semibold tracking-tight mb-6">Tambah Produk</h2>
+                {error && <p className="text-sm text-red-500 mb-4">{error}</p>}
+                <form onSubmit={handleSubmit} className="space-y-4">
+                    <div className="space-y-2">
+                        <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                            Nama Produk
+                        </label>
+                        <input 
+                            type="text" 
+                            className="flex h-10 w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+                            value={nama} 
+                            onChange={(e) => setNama(e.target.value)} 
+                        />
+                    </div>
+                    <div className="space-y-2">
+                        <label className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
+                            Harga
+                        </label>
+                        <input 
+                            type="number" 
+                            className="flex h-10 w-full rounded-md border border-gray-200 bg-white px-3 py-2 text-sm placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2"
+                            value={harga} 
+                            onChange={(e) => setHarga(e.target.value)} 
+                        />
+                    </div>
+                    <button 
+                        type="submit" 
+                        className="inline-flex items-center justify-center rounded-md text-sm font-medium h-10 px-4 py-2 w-full bg-black text-white hover:bg-gray-900 transition-colors"
+                    >
+                        Simpan
+                    </button>
+                </form>
+            </div>
         </div>
-    )
+    );
 }
 
 export default TambahProduk;
