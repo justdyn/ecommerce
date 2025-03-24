@@ -163,61 +163,7 @@ function TambahProduk() {
                     </form>
                 </div>
             </div>
-
-            <style jsx>{`
-                @keyframes shake {
-                    0%, 100% { transform: translateX(0); }
-                    10%, 30%, 50%, 70%, 90% { transform: translateX(-2px); }
-                    20%, 40%, 60%, 80% { transform: translateX(2px); }
-                }
-                .animate-shake {
-                    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
-                }
-
-                @keyframes fadeIn {
-                    from { 
-                        opacity: 0;
-                        transform: translateY(-10px);
-                    }
-                    to { 
-                        opacity: 1;
-                        transform: translateY(0);
-                    }
-                }
-                .animate-fade-in {
-                    animation: fadeIn 0.5s ease-out forwards;
-                }
-
-                @keyframes scaleCheck {
-                    0% { 
-                        transform: scale(0);
-                        opacity: 0;
-                    }
-                    50% { 
-                        transform: scale(1.2);
-                    }
-                    100% { 
-                        transform: scale(1);
-                        opacity: 1;
-                    }
-                }
-                .animate-scale-check {
-                    animation: scaleCheck 0.5s ease-out forwards;
-                }
-
-                @keyframes drawCheck {
-                    from {
-                        stroke-dashoffset: 100;
-                    }
-                    to {
-                        stroke-dashoffset: 0;
-                    }
-                }
-                .animate-draw-check {
-                    stroke-dasharray: 100;
-                    animation: drawCheck 0.8s ease-out forwards;
-                }
-            `}</style>
+            
         </div>
     );
 }
