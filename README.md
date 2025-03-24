@@ -54,7 +54,7 @@ Berikut daftar endpoint API yang ada pada Base URL: http://localhost:3001, yaitu
    - Used in: ProdukList.jsx
 
 Tetapi, juga terdapat beberapa endpoint API yang tidak digunakan dalam penggunaan aplikasi, seperti :
-Additional Test Endpoints (Unused):
+
 1. GET /
    - Returns: "Hello World from Express.js!"
 
