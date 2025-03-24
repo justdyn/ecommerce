@@ -173,10 +173,7 @@ function ProdukList({onEdit}) {
                     </div>
                 </div>
             )}
-
-            <style jsx>{`
-                /* Remove existing blob animations as they're no longer needed */
-            `}</style>
+  
         </div>
     );
 }
