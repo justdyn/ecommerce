@@ -79,7 +79,6 @@ ecommerce-main/
 - Response: Created product object
 - Used in: TambahProduk.jsx
 
-<<<<<<< HEAD
 #### 4. Update Product
 - Method: PATCH
 - Endpoint: /produk/:id
@@ -96,10 +95,6 @@ ecommerce-main/
 - Used in: ProdukList.jsx
 
 ### Additional Test Endpoints (Unused):
-=======
-Tetapi, juga terdapat beberapa endpoint API yang tidak digunakan dalam penggunaan aplikasi, seperti :
-
->>>>>>> 205345318469d69a0cb8a50c7aa988cac01b778e
 1. GET /
    - Returns: "Hello World from Express.js!"
 2. POST /data
